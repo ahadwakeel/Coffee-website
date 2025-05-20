@@ -52,6 +52,7 @@
     }
     body.show-mobile-menu .navbar .nav-menu {
         left: 0;
+        
     }
     .navbar .nav-menu .nav-link {
         color: var(--dark-color);
@@ -66,7 +67,7 @@
         flex-direction: column-reverse;
         justify-content: center;
     }
-    .hero-section .hero-details :is(.subtitle, .description), .about-section .about-details{
+    .hero-section .hero-details :is(.subtitle, .description), .about-section .about-details, .contact-section .contact-form{
         max-width: 100%;
     }
     .hero-section .hero-details .button-group {
@@ -78,7 +79,7 @@
     }
     .about-section .section-content {
         gap: 70px;
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
     .about-section .about-image-wrapper .about-image {
         width: 100%;
@@ -95,12 +96,23 @@
     .menu-section .menu-list .menu-item .menu-image {
         max-width: 200px;
     }
+    .gallery-section .gallery-list {
+        gap: 30px;
+    }
+    .gallery-section .gallery-list .gallery-item {
+        width: calc(100% / 2 - 30px);
+    }
+    .contact-section .section-content {
+        align-items: center;
+        flex-direction: column-reverse;
+    }
   }
   @media screen and (max-width: 640px) {
     .menu-section .menu-list {
         gap: 60px;
     }
-    .menu-section .menu-list .menu-item {
+    .menu-section .menu-list .menu-item,
+    .gallery-section .gallery-list .gallery-item {
         width: 100%;
     }
     .testimonials-section .slider-wrapper {
@@ -109,4 +121,17 @@
     .testimonials-section .swiper-slide-button {
         display: none;
     }
+    .footer-section .section-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+  }
+  @media screen and (max-width: 425px) {
+
+  }
+  @media screen and (max-width: 375px) {
+
+  }
+  @media screen and (max-width: 320px) {
+
   }
