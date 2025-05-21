@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
+
 }
 
 :root {
@@ -36,6 +37,7 @@
     /* Site max Width */
     --site-max-width: 1300px;
 }
+
 html {
     scroll-behavior: smooth;
 }
@@ -53,6 +55,9 @@ button {
 }
 img {
     width: 100%;
+}
+main {
+    overflow: hidden;
 }
 .section-content {
     margin: 0 auto;
@@ -110,14 +115,14 @@ header .navbar {
     background: var(--secondry-color);
 }
 .hero-section {
-    padding: 200px 0 0 0;
-    min-height: 100vh;
+    padding: 100px 0 0 0;
+    min-width: 100%;
     background: var(--primary-color)
 }
 .hero-section .section-content {
     display: flex;
     align-items: center;
-    min-width: 100vh;
+    min-height: 100vh;
     color: var(--white-color);
     justify-content: space-between;
 }
